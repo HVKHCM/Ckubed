@@ -1,0 +1,1000 @@
+  308  docker images
+  309  sudo docker run -ti configuration_for_pip
+  310  sudo docker run -ti test3
+  311  sudo docker ps -l
+  312  docker images
+  313  sudo docker build -t mpi4py-conf
+  314  sudo docker build -t mpi4py-conf .
+  315  sudo docker rmi test3
+  316  ls
+  317  docker images
+  318  sudo docker run -ti mpi4py-conf
+  319  sudo nano Dockerfile
+  320  git clone https://github.com/HVKHCM/patternlets.git
+  321  sudo docker build -t test4 .
+  322  ls
+  323  sudo nano Dockerfile
+  324  sudo docker build -t test4 .
+  325  sudo docker run -ti test4
+  326  sudo nano Dockerfile
+  327  sudo docker run -ti test4
+  328  sudo nano Dockerfile
+  329  sudo docker build -t test5 .
+  330  ls
+  331  sudo nano Dockerfile
+  332  sudo docker build -t test6 .
+  333  sudo docker run -ti test6
+  334  sudo nano Dockerfile
+  335  sudo docker build -t test7 .
+  336  sudo docker run -ti test7
+  337  sudo docker build -t patternlets-copy .
+  338  docker images
+  339  sudo docker rmi test7 test6 test4
+  340  sudo docker rmi test6
+  341  sudo docker rmi -f test6
+  342  sudo docker rmi -f test4
+  343  ls
+  344  sudo docker run -ti patternlets-copy
+  345  sudo nano Dockerfile
+  346  sudo docker build -t test8 .
+  347  sudo nano Dockerfile
+  348  sudo docker build -t test8 .
+  349  sudo nano Dockerfile
+  350  sudo docker build -t test8 .
+  351  sudo docker run -ti test8
+  352  sudo docker build -t mpi4py-done .
+  353  sudo docker run -ti mpi4py-done
+  354  docker images
+  355  sudo docker rmi test8
+  356  sudo docker run -ti mpi4py-done
+  357  docker ps 
+  358  docker ps -a
+  359  docker inspect -f
+  360  docker inspect
+  361  docker inspect hungry_robinson
+  362  docker-machine ls
+  363  ifconfig
+  364  docker-machine ls
+  365  sudo snap install docker
+  366  docker-machine ls
+  367  docker node ls
+  368  ls
+  369  cd patternlets/
+  370  sudo apt-get python3-mpi4py python3-numpy
+  371  sudo apt-get install python3-mpi4py python3-numpy
+  372  sudo apt-get install python3-mpi4py python3-numpy -y
+  373  cd  .. /..
+  374  cd ../..
+  375  sudo apt-get install -y python3-mpi4py python3-numpy
+  376  sudo apt-get -y install  python3-mpi4py python3-numpy
+  377  sudo apt-get install  python3-mpi4py python3-numpy
+  378  sudo apt-get install python3-mpi4py python3-numpy
+  379  git clong https://github.com/HVKHCM/patternlets.git
+  380  git clone https://github.com/HVKHCM/patternlets.git
+  381  cd patternlets/patternlets/
+  382  cd mpi4py/
+  383  mpirun -np 4 python3 04messagePassingDeadlock.py 
+  384  sudo nano ~/hostfile
+  385  mpirun -hostfile ~/hostfile -np 8 00spmd.py 
+  386  mpirun -hostfile ~/hostfile -np 8 python3 00spmd.py 
+  387  mpirun -H 10.0.0.254,10.0.0.1 -np 8 python3 00spmd.py 
+  388  sudo nmap -sn 10.0.0.254
+  389  mpirun -H huynh6@headnode,huynh6@worker00 -np 8 python3 00spmd.py 
+  390  mpirun -H headnode,worker00 -np 8 python3 00spmd.py 
+  391  mpirun -H headnode,10.0.0.1 -np 8 python3 00spmd.py 
+  392  mpirun --host headnode,10.0.0.1 -np 8 python3 00spmd.py 
+  393  mpirun -H headnode,10.0.0.1 --mca routed-direct -np 8 python3 00spmd.py 
+  394  ompi_info
+  395  export LD_LIBRARY_PATH=/usr/lib/
+  396  mpirun -H headnode,10.0.0.1 --mca routed-direct -np 8 python3 00spmd.py 
+  397  sudo nano hostfile
+  398  sudo nano ~/hostfile
+  399  mpirun -H headnode,worker00 --mca routed-direct -np 8 python3 00spmd.py 
+  400  mpirun -hostfile ~/hostfile -np 8 python3 00spmd.py 
+  401  mpirun -H headnode,worker00 --mca routed=direct -np 8 python3 00spmd.py 
+  402  which mpirun
+  403  export $LD_LIBRARY_PATH=/usr/bin
+  404  export $LD_LIBRARY_PATH=/usr/bin/
+  405  export LD_LIBRARY_PATH=/usr/bin/
+  406  mpirun -H headnode,worker00 --mca routed=direct -np 8 python3 00spmd.py 
+  407  mpirun -H headnode,worker00 --mca routed direct -np 8 python3 00spmd.py 
+  408  mpirun -H headnode,worker00 -mca routed direct -np 8 python3 00spmd.py 
+  409  mpirun -H headnode,worker00 -mca routed direct -np 8 python3 08broadcast.py 
+  410  mpirun -H headnode,worker00 -mca routed-direct -np 8 python3 08broadcast.py 
+  411  ping 10.0.0.1
+  412  cd ..
+  413  cd openMP/
+  414  ls
+  415  cd ..
+  416  cd MPI/
+  417  ls
+  418  cd 02
+  419  cd 02.parallelLoop-equalChunks
+  420  make
+  421  mpirun -hostfile ~/hostfile -np 8 ./parallelLoopEqualChunks
+  422  mpirun -np 8 ./parallelLoopEqualChunks -MPDLOC- headnode worker00
+  423  mpirun -np 2 ./parallelLoopEqualChunks -MPDLOC- headnode worker00
+  424  mpirun -np 1 ./parallelLoopEqualChunks -MPDLOC- headnode worker00
+  425  sudo nano hostfile
+  426  sudo nano ~/hostfile
+  427  mpirun -np 8 -hostfile ~/hostfile ./parallelLoopEqualChunks
+  428  mpirun -np 8 -hostfile ~/hostfile --mca routed=direct ./parallelLoopEqualChunks
+  429  mpirun -np 8 -hostfile ~/hostfile ./parallelLoopEqualChunks --mca routed=direct
+  430  mpirun -np 8 -hostfile ~/hostfile --mca routed=direct ./parallelLoopEqualChunks
+  431  mpirun -np 8 --mca routed=direct-hostfile ~/hostfile ./parallelLoopEqualChunks
+  432  mpirun -np 8 --mca routed=direct -hostfile ~/hostfile ./parallelLoopEqualChunks
+  433  sudo nano ~/hostfile
+  434  mpirun -np 8 --mca routed=direct -hostfile ~/hostfile ./parallelLoopEqualChunks
+  435  mpirun -np 1 --mca routed=direct -hostfile ~/hostfile ./parallelLoopEqualChunks
+  436  sudo mpirun -np 1 --mca routed=direct -hostfile ~/hostfile ./parallelLoopEqualChunks
+  437  chown huynh6 ~/hostfile
+  438  sudo chown huynh6 ~/hostfile
+  439  mpirun -np 1 --mca routed=direct -hostfile ~/hostfile ./parallelLoopEqualChunks
+  440  mpirun -np 1 --mca routed=direct --hostfile ~/hostfile ./parallelLoopEqualChunks
+  441  mpirun -np 1 --mca routed=direct -H headnode,worker00 ./parallelLoopEqualChunks
+  442  mpirun -np 1 -H headnode,worker00 --mca routed=direct ./parallelLoopEqualChunks
+  443  make
+  444  --mca routed=direct
+  445  --mca routed=direct mpirun -np 8 -H headnode,worker00 ./parallelLoopEqualChunks
+  446  mpirun -np 1 -H headnode,worker00 ./parallelLoopEqualChunks
+  447  mpirun -np 1 -H headnode,worker00 ./parallelLoopEqualChunks --mca routed=direct
+  448  mpirun -np 1 -H headnode,worker00 ./parallelLoopEqualChunks --map-by node --mca routed=direct
+  449  ompi_info
+  450  ls
+  451  cd ..
+  452  ls
+  453  sudo wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.1.tar.gz
+  454  ls
+  455  tar -zxf openmpi-4.1.1.tar.gz
+  456  cd openmpi-4.1.1/
+  457  sudo ./configure --prefix=/usr/lib/openmpi-4.1.1
+  458  sudo make all install
+  459  ompi_info
+  460  sudo ./configure --prefix=/usr/local
+  461  sudo make clean
+  462  sudo make distclean
+  463  sudo ./configure --prefix=/usr/local
+  464  sudo make all install
+  465  ompi_info
+  466  sudo make clean
+  467  sudo apt-get install mpich mpich-doc
+  468  ompi_info
+  469  cd patternlets/patternlets/MPI/
+  470  cd 04
+  471  cd 04.messagePassingDeadlock/
+  472  cd ..
+  473  cd 09
+  474  cd 09.broadcastUserInput/
+  475  make
+  476  mpirun -np 8 -hostfile ~/hostfile ./broadcastUserInput
+  477  ompi_ingfo
+  478  ompi_info
+  479  sudo nano /etc/hosts
+  480  ip ad
+  481  sudo ssh huynh6@headnode
+  482  nano hostfile
+  483  cd patternlets/patternlets/MPI/05.messagePassing/
+  484  make
+  485  mpirun -np 8 -hostfile ~/hostfile ./messagePassing
+  486  ompi_info
+  487  mpirun -np 8 -hostfile ~/hostfile ./messagePassing
+  488  mpirun -np 8 -H headnode,worker00 ./messagePassing
+  489  mpirun -np 8 -H 10.0.0.1 ./messagePassing
+  490  mpirun -np 8 -H 10.0.0.254 ./messagePassing
+  491  mpirun -np 4 ./messagePassing
+  492  sudo nano ~/hostfile
+  493  mpirun -np 4 ./messagePassing
+  494  mpirun -np 1 ./messagePassing
+  495  mpirun -np 4 -hostfile ~/hostfile ./messagePassing
+  496  mpirun -np 5 -hostfile ~/hostfile ./messagePassing
+  497  mpirun -np 5 -hostfile ~/hostfile --mca routed=direct ./messagePassing
+  498  mpirun -np 5 -hostfile ~/hostfile --[Cmca ./messagePassing
+  499  mpirun -np 5 -hostfile ~/hostfile --mca routed=direct ./messagePassing
+  500  mpirun--mca routed=direct -np 5 -hostfile ~/hostfile ./messagePassing
+  501  mpirun --mca routed=direct -np 5 -hostfile ~/hostfile ./messagePassing
+  502  mpirun --mca routed=direct ./messagePassing -np 8 -hostfile ~/hostfile
+  503  cd ..
+  504  cd mpi4py/
+  505  mpirun -np 8 -H headnode,worker00 python3 03parallelLoopChunksOf1.py 
+  506  mpirun --mca routed direct -np 4 -hostfile python3 03parallelLoopChunksOf1.py 
+  507  mpirun --mca routed direct -np 4 -hostfile hostfile python3 03parallelLoopChunksOf1.py 
+  508  mpirun --mca routed direct -np 4 -hostfile ~/hostfile python3 03parallelLoopChunksOf1.py 
+  509  export OMPI_MCA_routed=direct
+  510  mpirun -np 4 -hostfile ~/hostfile python3 03parallelLoopChunksOf1.py 
+  511  mpirun -np 4 python3 03parallelLoopChunksOf1.py 
+  512  mpirun -np 4 -hostfile ~/hostfile python3 03parallelLoopChunksOf1.py 
+  513  mpirun -np 4 -H localhost python3 03parallelLoopChunksOf1.py 
+  514  mpirun -np 4 -H headnode python3 03parallelLoopChunksOf1.py 
+  515  nano ~/hostfile
+  516  mpirun -np 4 -H headnode python3 03parallelLoopChunksOf1.py 
+  517  mpirun -np 4 python3 03parallelLoopChunksOf1.py 
+  518  nano ~/hostfile
+  519  mpirun -np 4 python3 03parallelLoopChunksOf1.py 
+  520  nano ~/hostfile
+  521  mpirun -np 4 python3 03parallelLoopChunksOf1.py 
+  522  mpirun -np 4 -hostfile ~/hostfile python3 03parallelLoopChunksOf1.py 
+  523  mpirun -np 8 -hostfile ~/hostfile python3 03parallelLoopChunksOf1.py 
+  524  nano ~/hostfile
+  525  mpirun -np 8 -hostfile ~/hostfile python3 03parallelLoopChunksOf1.py 
+  526  ssh-copy-id worker00
+  527  sudo ssh-copy-id worker00
+  528  ssh-copy-id worker00
+  529  cd ~
+  530  ssh-keygen -t rsa -b 4096
+  531  cat ~/.ssh/id_rsa.pub > ~/.ssh/authorized_keys
+  532  ping worker00
+  533  ping headnode
+  534  ip ad
+  535  nano hostfile 
+  536  nano hostfile
+  537  ip ad
+  538  cd ~
+  539  sudo nano /etc/dhcp/dhcpd.conf
+  540  sudo systemctl start isc-dhcp-server
+  541  sudo systemctl status isc-dhcp-server
+  542  sudo systemctl restart isc-dhcp-server
+  543  sudo systemctl status isc-dhcp-server
+  544  sudo nano /etc/hosts
+  545  ssh-copy-id plzwork@work00
+  546  ssh-copy-id plzwork@worker00
+  547  ssh-copy-id plzwork
+  548  ssh-copy-id huynh6@plzwork
+  549  ssh-copy-id huynh6@worker00
+  550  sudo nano /etc/dhcp/dhcpd.conf
+  551  sudo systemctl restart isc-dhcp-server
+  552  sudo systemctl status isc-dhcp-server
+  553  ssh-copy-id huynh6@worker01
+  554  sudo ssh-copy-id huynh6@worker01
+  555  ssh-copy-id huynh6@worker01
+  556  ssh-copy-id worker01
+  557  sudo ssh-copy-id worker01
+  558  ssh-copy-id worker01
+  559  usermod -aG bw-sudo huynh6
+  560  sudo usermod -aG bw-sudo huynh6
+  561  ssh-copy-id worker01
+  562  ssh-copy-id 10.0.0.2
+  563  ssh-id-copy worker01
+  564  ssh-id-copy worker01
+  565  ssh-id-copy huynh6@worker01
+  566  ssh-copy-id worker01
+  567  ssh worker01
+  568  sudo ssh worker01
+  569  ssh-keygen -t rsa -b 4096
+  570  cat ~/.ssh/id_rsa.pub > ~/.ssh/authorized_keys
+  571  ssh-copy-id huynh6@worker01
+  572  ssh-copy-id huynh6@plzwork
+  573  ssh-copy-id plzwork@worker01
+  574  ssh worker01
+  575  ssh plzwork@worker01
+  576  ntpq -p
+  577  sudo nano /etc/ntp.conf
+  578  sudo systemctl start ntp
+  579  ntpq -p
+  580  sudo systemctl restart ntp
+  581  ntpq -p
+  582  sudo shutdown now
+  583  ssh huynh6@worker01
+  584  ssh plzwork@worker01
+  585  touch testing
+  586  df -h
+  587  mount
+  588  nano /etc/exports
+  589  ls /home
+  590  cd patternlets/patternlets/MPI/
+  591  cd 00
+  592  cd 00.spmd/
+  593  make
+  594  mpirun -np 6 --hostfile ~/hostfile ./spmd
+  595  sudo nano ~/hostfile
+  596  mpirun -np 2 --hostfile ~/hostfile ./spmd
+  597  mpirun -np 2 -MPDLOC- headnode worker01 ./spmd
+  598  mpirun -np 2 --hostfile ~/hostfile ./spmd
+  599  hostfile
+  600  sudo nano ~/hostfile
+  601  mpirun -np 2 --hostfile ~/hostfile ./spmd
+  602  mpirun -np 2 --hostfile ~/hostfile --map-by node ./spmd
+  603  ompi_job
+  604  ompi_info
+  605  mpirun -np 2 --hostfile ~/hostfile --fwd-mpirun-port ./spmd
+  606  mpirun -np 2 -H huynh6@headnode,plzwork@worker01 ./spmd
+  607  mpirun -np 2 -H headnode,worker01 ./spmd
+  608  ompi_info
+  609  ls /home
+  610  sudo nano /etc/fstab
+  611  sudo exportfs -a
+  612  showmount -e
+  613  sudo nano /etc/fstab
+  614  sudo nano /etc/ldap.conf
+  615  mpirun -np 2 -H headnode,worker01 ./spmd
+  616  sudo nano ~/hostfile
+  617  mpirun -np 2 -H headnode,worker01 ./spmd
+  618  ping huynh6@worker01
+  619  ping worker01
+  620  mpirun -np 2 -H headnode,worker01 ./spmd
+  621  ssh worker01
+  622  ssh plzwork@worker01
+  623  cat ~/.ssh/id_rsa.pub
+  624  ssh-copy-id -i ~/.ssh/id_rsa.pub plzwork@worker01
+  625  ssh-copy-id -i ~/.ssh/id_rsa.pub huynh6@worker01
+  626  ssh-copy-id -i ~/.ssh/id_rsa.pub plzwork@worker01
+  627  cd home
+  628  cd
+  629  ls -a
+  630  ls -al
+  631  ls -al .ssh
+  632  chmod 744 .ssh
+  633  ls -al .ssh
+  634  ls -al
+  635  ssh-copy-id -i ~/.ssh/id_rsa.pub huynh6@worker01
+  636  chmod 766 .ssh
+  637  ssh-copy-id -i ~/.ssh/id_rsa.pub huynh6@worker01
+  638  chmod 777 .ssh
+  639  ssh-copy-id -i ~/.ssh/id_rsa.pub huynh6@worker01
+  640  sudo ssh-copy-id -i ~/.ssh/id_rsa.pub huynh6@worker01
+  641  sudo chmod 766 .ssh/authorized_keys 
+  642  sudo ssh-copy-id -i ~/.ssh/id_rsa.pub huynh6@worker01
+  643  ssh huynh6@worker01
+  644  ssh 'huynh6@worker01'
+  645  ssh -i ~/.ssh/id_rsa.pub huynh6@worker01
+  646  sudo ssh-copy-id -i ~/.ssh/id_rsa.pub plzwork@worker01
+  647  cd /tmp/
+  648  ls
+  649  ompi_info
+  650  sudo make clean
+  651  cd 
+  652  ls
+  653  ./update2.sh
+  654  sudo ./update2.sh
+  655  ompi_info
+  656  ssh huynh6@worker01
+  657  ls -al
+  658  ls -al .ssh
+  659  sudo /usr/bin/sshd -d -p 2222
+  660  which sshd
+  661  sudo /usr/sbin/sshd -d -p 2222
+  662  service ssh stop
+  663  service ssh start
+  664  ssh huynh6@worker01
+  665  ssh -p 2222 huynh6@worker01
+  666  ssh -p 2222 huynh6@10.0.0.2\
+  667  ssh huynh6@10.0.0.2\
+  668  ssh huynh6@worker01
+  669  nano .ssh/known_host
+  670  nano .ssh/known_hosts
+  671  ssh-copy-id huynh6@worker01
+  672  ssh huynh6@worker01
+  673  rm -rf /home/huynh6/.ssh
+  674  rm -rf /home/huynh6/.ssh
+  675  ls -a .ssh
+  676  ssh-keygen -t rsa -b 4096
+  677  cat ~/.ssh/id_rsa.pub > ~/.ssh/authorized_keys
+  678  ssh-copy-id plzwork@worker01
+  679  sudo ssh-copy-id plzwork@worker01
+  680  sudo ssh-copy-id worker01
+  681  ssh-copy-id worker01
+  682  ssh-copy-id plzwork@worker01
+  683  ssh huynh6@headnode
+  684  ssh-copy-id worker01
+  685  sudo nano /etc/dhcp/dhcpd.conf
+  686  systemctl restart isc-dhcp-server
+  687  systemctl status isc-dhcp-server
+  688  sudo nano /etc/hosts
+  689  systemctl restart isc-dhcp-server
+  690  systemctl status isc-dhcp-server
+  691  docker images
+  692  docker images -a
+  693  docker ps -l
+  694  docker ps -a
+  695  docker images
+  696  docker images -a
+  697  cd CMTexample/
+  698  docker images
+  699  ls
+  700  docker build -t mpi4py
+  701  docker build -t mpi4py .
+  702  docker login
+  703  docker images
+  704  docker build -t mpi4py .
+  705  docker restart
+  706  exportfs -a
+  707  sudo nano /etc/exports
+  708  sudo nano /etc/fstab
+  709  sudo reboot now
+  710  sudo apt update
+  711  apt update
+  712  sudo apt update
+  713  sudo apt install w3m iptables openssh-client wget nano info man-db manpages friendly-recovery tmux grub2 traceroute bash-completion command-not-found dnsutils lshw lsof mtr psmisc tcpdump apt-transport-https update-manager-core gcc g++ libtool gedit emacs ssh sshpass xorg
+  714  sudo nano /etc/hosts
+  715  ssh-keygen -t rsa -b 4096
+  716  cat ~/.ssh/id_rsa.pub > ~/.ssh/authorized_keys
+  717  ssh-copy-id headnode
+  718  ssh headnode
+  719  sudo apt install nfs-kernel-server
+  720  showmount -e headnode
+  721  sudo nano /etc/fstab
+  722  sudo mount -av
+  723  ls
+  724  sudo apt install ntp
+  725  sudo nano /etc/ntp.conf
+  726  systemctl start ntp
+  727  ntpq -p
+  728  systemctl start ntp
+  729  ntpq -p
+  730  systemctl restart ntp
+  731  ntpq -p
+  732  sudo apt install libnss-ldap libpam-ldap
+  733  sudo nano /etc/ldap.conf
+  734  sudo nano /etc/ldap/ldap.conf
+  735  sudo nano /etc/nsswitch.conf
+  736  ompi_info
+  737  sudo wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.1.tar.gz
+  738  tar -zxf openmpi-4.1.1.tar.gz
+  739  ls
+  740  cd openmpi-4.1.1
+  741  ls
+  742  cd ..
+  743  cd ~
+  744  cd openmpi-4.1.1/
+  745  sudo ./configure --prefix=/usr/local 
+  746  cd ..
+  747  rm -rf openmpi-4.1.1
+  748  sudo rm openmpi-4.1.1
+  749  sudo rm -rf openmpi-4.1.1
+  750  scp -r huynh6@headnode:~/openmpi-4.1.1.tar.gz .
+  751  scp -r headnode:~/openmpi-4.1.1.tar.gz .
+  752  sudo scp -r headnode:~/openmpi-4.1.1.tar.gz .
+  753  ssh headnode
+  754  ls
+  755  sudo scp headnode:/home/huynh6/openmpi-4.1.1 .
+  756  sudo scp headnode:/home/huynh6/openmpi-4.1.1.tar.gz .
+  757  scp headnode:/home/huynh6/openmpi-4.1.1.tar.gz .
+  758  tar -zxf openmpi-4.1.1.tar.gz
+  759  tar -zxf worker02:~/openmpi-4.1.1.tar.gz
+  760  ls
+  761  ssh worker02
+  762  ls
+  763  tar -xzf worker02:~/openmpi-4.1.1.tar.gz
+  764  scp -r headnode:~/openmpi-4.1.1.tar.gz worker02:~
+  765  tar -xzf worker02:~/openmpi-4.1.1.tar.gz
+  766  tar -xzf openmpi-4.1.1.tar.gz
+  767  ls worker02:~
+  768  ls
+  769  tar -xzf openmpi-4.1.1.tar.gz
+  770  ls
+  771  cd //
+  772  cd ..
+  773  cd ~
+  774  cd ..
+  775  ls
+  776  cd huynh6@worker02
+  777  cd huynh6
+  778  ks
+  779  'ls
+  780  ls
+  781  ompi_info
+  782  wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.1.tar.gz
+  783  tar -xzf openmpi-4.1.1.tar.gz
+  784  tar -xzf openmpi-4.1.1.tar.gz.1
+  785  ls
+  786  cd openmpi-4.1.1.tar.gz.1
+  787  tar -xzf openmpi-4.1.1.tar.gz.1
+  788  cd ~
+  789  ls
+  790  sudo unmout /home
+  791  sudo umount /home
+  792  ls
+  793  tar -xzf openmpi-4.1.1.tar.gz
+  794  sudo umount \home
+  795  ls
+  796  cd ..
+  797  ls
+  798  cd huynh6/
+  799  tar -xzf openmpi-4.1.1.tar.gz
+  800  ls -al
+  801  ls
+  802  wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.1.tar.gz
+  803  ls
+  804  tar -xzf openmpi-4.1.1.tar.gz
+  805  sudo scp -r headnode:~/openmpi-4.1.1.tar.gz .
+  806  scp -r headnode:~/openmpi-4.1.1.tar.gz ~/something
+  807  cd something
+  808  ls
+  809  mkdir something
+  810  rm -rf something
+  811  mkdir something
+  812  scp -r headnode:~/openmpi-4.1.1.tar.gz ~/something
+  813  cd something/
+  814  ls
+  815  tar -xzf openmpi-4.1.1.tar.gz 
+  816  sudo nano /etc/fstab
+  817  sudo reboot now
+  818  ompi_info
+  819  export LD_LIBRARY_PATH
+  820  export LD_LIBRARY_PATH=/usr/local/lib
+  821  ompi_info
+  822  echo $LD_LIBRARY_PATH
+  823  sudo nano /etc/fstab
+  824  sudo reboot now
+  825  cd pa
+  826  cd patternlets/patternlets/MPI/
+  827  ls
+  828  cd 00
+  829  cd 00.spmd/
+  830  make
+  831  mpirun -np 2 -H worker02 ./spmd
+  832  ping worker02
+  833  ping worker01
+  834  mpirun -np 1 -H worker02 ./spmd
+  835  sudo sed -i 's/use-ssh-agent/no-use-ssh-agent/' /etc/X11/Xsession.options
+  836  mpirun -np 1 -H worker02 ./spmd
+  837  sudo rebootnow
+  838  sudo reboot now
+  839  ping 10.0.0.3
+  840  systemctl status isc-dhcp-server
+  841  sudo systemctl restart isc-dhcp-server
+  842  systemctl status isc-dhcp-server
+  843  sudo nano /etc/hosts
+  844  ping worker03
+  845  ping worker02
+  846  rm -rf .ssh
+  847  ssh-keygen -t rsa -b 4096
+  848  cat ~/.ssh/id_rsa.pub > ~/.ssh/authorized_keys
+  849  sudo nano /etc/hosts
+  850  ssh-copy-id worker02
+  851  ssh worker02
+  852  touch t
+  853  nano /etc/ntp.conf
+  854  sytemctl start ntp
+  855  systemctl start ntp
+  856  ntpq -p
+  857  sudo nano /etc/ldap.conf
+  858  ompi_info
+  859  ssh worker02
+  860  ls
+  861  rm openmpi-4.1.1.tar.gz
+  862  ls
+  863  rm openmpi-4.1.1.tar.gz
+  864  ls
+  865  wget https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-4.1.1.tar.gz
+  866  ls -al
+  867  ssh worker02
+  868  rm openmpi-4.1.1.tar.gz openmpi-4.1.1.tar.gz.1 -rf something
+  869  ls
+  870  ssh worker02
+  871  nano update2.sh
+  872  docker imagesa
+  873  docker images
+  874  cd patternlets/patternlets/MPI/00.spmd/
+  875  make
+  876  mpirun -np 6 -H headnode,worker02 ./spmd
+  877  echo $LD_LIBRARY_PATH
+  878  export LD_LIBRARY_PATH=/usr/local/lib
+  879  mpirun -np 6 -H headnode,worker02 ./spmd
+  880  echo $LD_LIBRARY_PATH
+  881  mpirun -np 6 -H headnode,worker02 ./spmd
+  882  ompi_info
+  883  mpirun -np 6 -H headnode,worker02 ./spmd
+  884  mpirun -np 2 -H headnode ./spmd
+  885  mpirun -np 1 -H headnode ./spmd
+  886  mpirun -np 1 -H worker02 ./spmd
+  887  export worker02:LD_LIBRARY_PATH=/usr/local/lib
+  888  ssh worker02
+  889  sudo nano .bashrc
+  890  cd ~
+  891  sudo nano .bashrc
+  892  sudo nano .profile
+  893  kubectl cluster-info
+  894  cd ckubed-system/
+  895  ls
+  896  scipt
+  897  script
+  898  cd script
+  899  ./script.sh create openmp test
+  900  ./script.sh log openmp test
+  901  ./script.sh logs openmp test
+  902  ./script.sh list
+  903  ~/kind cluster-info
+  904  kubectl cluster-info
+  905  ./script.sh logs openmp test
+  906  ./script.sh create openmp test
+  907  ./script.sh logs openmp test
+  908  ./script.sh list
+  909  ./user_script.sh
+  910  ls
+  911  nano users.txt
+  912  ls
+  913  nano script_testing.sh
+  914  cd ..
+  915  ls
+  916  ./script.sh
+  917  cd script
+  918  ./script.sh run openmp test 
+  919  ./script.sh run openmp test --command "echo "Hi""
+  920  ./script.sh list
+  921  ./script.sh logs openmp test
+  922  ./script.sh delete openmp test
+  923  ./script.sh create mpi mpi-test -t job --number-of-replicas 3 --command "pwd"
+  924  ./script.sh logs openmp test
+  925  kubectl apply -f -R kind
+  926  kubectl apply -f -R test
+  927  ./script run mpi test --command "echo haha"
+  928  ./script.sh run mpi test --command "echo haha"
+  929  ./script.sh list
+  930  ./script.sh run mpi kindnest --command "echo haha"
+  931  ./script.sh run mpi kindnet --command "echo haha"
+  932  ./script.sh create openmp kindnet
+  933  ./script.sh logs openmp kindnet
+  934  ./script.sh list
+  935  kubectl
+  936  kubectl get cluster
+  937  kubectl cluster-info
+  938  cd ..
+  939  ./kind delete cluster -all
+  940  ./kind delete cluster --all
+  941  ./kind delete cluster
+  942  ./kind get clusters
+  943  kubctl cluster-info
+  944  kubectl cluster-info
+  945  cd ckubed-system/
+  946  ls
+  947  script
+  948  cd script
+  949  ./script.sh crete openmp test
+  950  ./script.sh create openmp test
+  951  cd ..
+  952  ./kind create cluster --name test
+  953  cd ckubed-system/script/
+  954  ls
+  955  ./script.sh create openmp test
+  956  cd ..
+  957  sudo nano pod.yaml
+  958  sudo rm pod.yaml
+  959  nano pod.yaml
+  960  nano test.yaml
+  961  docker images
+  962  nano test.yaml
+  963  kubectl apply -f test.yaml
+  964  kubectl get pods
+  965  nano test.yaml
+  966  kubectl get pods
+  967  kubectl apply -f test.yaml
+  968  kubectl get pods
+  969  cd ..
+  970  cd ~
+  971  cd ckubed-system/
+  972  cd script
+  973  ./script.sh logs openmp test
+  974  ./script.sh run openmp test --command "echo hi"
+  975  ./script.sh list
+  976  kubctl get pod
+  977  kubectl get pod
+  978  kubectl apply -f ~/test.yaml
+  979  kubectl get pod
+  980  nano ~/test.yaml
+  981  kubectl apply -f ~/test.yaml
+  982  kubectl get pod
+  983  ./script.sh list -t openmp ~/test.yaml
+  984  ./script.sh -t openmp ~/test.yaml
+  985  ./script.sh run openmp test --command "echo "Hi""
+  986  ./script.sh list
+  987  ./script.sh list default
+  988  ./script.sh lubeacademy -n default
+  989  ./script.sh openmp test -n default
+  990  ./script.sh create openmp lubeacademy
+  991  ./script.sh create openmp default
+  992  ./script.sh create openmp something --command "ls /bin"
+  993  kubectl config use-contest something
+  994  kubectl config use-context something
+  995  kubectl config use-context openmp
+  996  ./script.sh log openmp something
+  997  ./script.sh logs openmp something
+  998  ./script.sh list
+  999  kubectl get pods
+ 1000  kubectl get pods -l something -o 
+ 1001  kubectl get pods -l something 
+ 1002  kubectl get cluster
+ 1003  kubectl cluster-info
+ 1004  nano ~/test.yaml
+ 1005  kubectl apply -f ~/test.yaml
+ 1006  ./script.sh list
+ 1007  ./script.sh logs openmp something
+ 1008  nano ~/test.yaml
+ 1009  kubectl apply -f ~/test.yaml
+ 1010  ./script.sh logs openmp something
+ 1011  ./script.sh list
+ 1012  ./script.sh run openmp something
+ 1013  ./script.sh run openmp something something
+ 1014  ./script.sh run openmp something --command "kubectl apply -f ~/test.yaml"
+ 1015  ./script.sh run openmp something --command "kubectl apply ~/test.yaml"
+ 1016  ./script.sh run openmp openmp
+ 1017  ./script.sh create openmp openmp
+ 1018  ./script.sh list
+ 1019  kubectl cluster-info
+ 1020  kubectl get namespace
+ 1021  kubectl get pods --namespace=openmp
+ 1022  kubectl config set-context --current --namespace=openmp
+ 1023  kubectl config view --minify | grep namespace:
+ 1024  kubectl apply -f ~/test.yaml
+ 1025  ./script.sh list
+ 1026  ./script.sh logs openmp openmp
+ 1027  kubectl apt-resuorces --namespaced=true
+ 1028  kubectl apt-resoures --namespaced=true
+ 1029  kubectl apt-resources --namespaced=true
+ 1030  kubectl api-resources --namespaced=true
+ 1031  kubectl run nginx --image=nginx --namespace=openmp
+ 1032  kubectl get pods --namespace=openmp
+ 1033  ./script.sh log openmp openmp
+ 1034  ./script.sh logs openmp openmp
+ 1035  ./script.sh
+ 1036  ./script.sh list
+ 1037  kubectl create deployment --image=nginx nginx-app
+ 1038  kubectl run --attach openmp --image=nginx
+ 1039  kubectl run --attach openmp --image=ubuntu
+ 1040  docker ps -a
+ 1041  ./script.sh 
+ 1042  ./script delete openmp something
+ 1043  ./script.sh delete openmp something
+ 1044  kubectl get namespace
+ 1045  ./script.sh delete openmp test
+ 1046  kubectl get namespace
+ 1047  kubectl config view
+ 1048  kubectl config current-context
+ 1049  kubectl config current-context openmp
+ 1050  kubectl config use-context openmp
+ 1051  kubectl get deployment
+ 1052  ./script.sh list
+ 1053  ./script.sh logs openmp openmp
+ 1054  kubectl get namespace
+ 1055  nano ~/test.yaml
+ 1056  kubectl apply -f ~/test.yaml
+ 1057  ./script.sh list
+ 1058  nano ~/test.yaml
+ 1059  kubectl apply -f ~/test.yaml
+ 1060  nano ~/test.yaml
+ 1061  kubectl apply -f ~/test.yaml
+ 1062  nano ~/test.yaml
+ 1063  ./script.sh list
+ 1064  nano ~/test.yaml
+ 1065  kubectl apply -f ~/test.yaml
+ 1066  nano ~/test.yaml
+ 1067  kubectl apply -f ~/test.yaml
+ 1068  nano ~/test.yaml
+ 1069  kubectl apply -f ~/test.yaml
+ 1070  ./script.sh list
+ 1071  nano ~/test.yaml
+ 1072  ./script.sh list
+ 1073  kubectl apply -f ~/test.yaml
+ 1074  nano ~/test.yaml
+ 1075  kubectl apply -f ~/test.yaml
+ 1076  nano ~/test.yaml
+ 1077  docker ps -l
+ 1078  kubectl apply -f ~/test.yaml
+ 1079  ./script.sh list
+ 1080  ./script.sh logs openmp something 
+ 1081  ./kind delete cluster
+ 1082  ./kind delete cluster kind-2
+ 1083  ./kind cluster
+ 1084  ./kind cluster-info
+ 1085  ./kind get clusters
+ 1086  ./kind delete cluster kind-2
+ 1087  ./kind delete cluster
+ 1088  ./kind get clusters
+ 1089  ./kind get clusters --name kind02
+ 1090  ./kind get clusters --name kind-2
+ 1091  ./kind get clusters --help
+ 1092  ./kind delete clusters --name kind02
+ 1093  ./kind delete clusters --help
+ 1094  ./kind delete clusters --all
+ 1095  sudo ansible-pull -U https://stogit.cs.stolaf.edu/kokala1/ansibilizekubernetes.git
+ 1096  git clone https://stogit.cs.stolaf.edu/kokala1/ansibilizekubernetes.git
+ 1097  ls
+ 1098  cd ansibilizekubernetes/
+ 1099  ls
+ 1100  sudo pip3 install ansible
+ 1101  sudo apt install pip
+ 1102  sudo pip install ansible
+ 1103  sudo ansible-pull -U https://stogit.cs.stolaf.edu/kokala1/ansibilizekubernetes.git
+ 1104  cd ..
+ 1105  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+ 1106  ls
+ 1107  kubectl
+ 1108  ./kubectl
+ 1109  sudo ./kubectl
+ 1110  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+ 1111  kubectl version --client
+ 1112  kubectl cluster-info
+ 1113  ./kind cluster create
+ 1114  ./kind create cluster
+ 1115  kubectl cluster-info
+ 1116  git clone https://stogit.cs.stolaf.edu/cap/f20b/c-kubed/ckubed-system
+ 1117  ls
+ 1118  cd ckubed-system/
+ 1119  script
+ 1120  ./script.sh help
+ 1121  ls
+ 1122  cd scipt
+ 1123  ./typescript.sh help
+ 1124  chmod u+x script.sh
+ 1125  ls
+ 1126  ./script.sh help
+ 1127  ./script help
+ 1128  script
+ 1129  cd typescript
+ 1130  typescript
+ 1131  ls -a
+ 1132  ls -al
+ 1133  ./kind export logs ./ckubed_sys/
+ 1134  cd ..
+ 1135  ./kind export logs ./ckubed_sys/
+ 1136  cd ckubed
+ 1137  cd ckubed_sys/
+ 1138  file typescript
+ 1139  ls
+ 1140  cd ..
+ 1141  cd ~
+ 1142  ls
+ 1143  cd ckubed-system/
+ 1144  ls
+ 1145  cd ckubed-system
+ 1146  cd ~/ckubed-sys
+ 1147  cd ..
+ 1148  cd ckubed-sys
+ 1149  cd ckubed_sys
+ 1150  ls
+ 1151  file kind-control-plane
+ 1152  cd ..
+ 1153  cd ckubed-system/
+ 1154  ls
+ 1155  file script
+ 1156  cd ckubed_sys
+ 1157  ls
+ 1158  ./script
+ 1159  ./script.sh help
+ 1160  cd ..
+ 1161  script
+ 1162  ./script.sh help
+ 1163  cd script
+ 1164  ls
+ 1165  ./script.sh help
+ 1166  sudo nano script.sh
+ 1167  ./script.sh help
+ 1168  emacs script.sh
+ 1169  ./script.sh help
+ 1170  kubectl cluster-info
+ 1171  cd ckubed-system/
+ 1172  cd script/
+ 1173  ./script.sh logs openmp something
+ 1174  nano ~/test2.yaml
+ 1175  kubectl apply -f ~/test2.yaml
+ 1176  ./script.sh list
+ 1177  ./script.sh logs openmp openmp
+ 1178  kubectl get pod
+ 1179  nano ~/test2.yaml
+ 1180  kubectl apply -f ~/test2.yaml
+ 1181  kubectl get pod
+ 1182  kubectl apply -f ~/test2.yaml
+ 1183  kubectl get pod
+ 1184  ./script.sh logs openmp openmp
+ 1185  kubectl get pod
+ 1186  nano ~/test2.yaml
+ 1187  kubectl apply -f ~/test2.yaml
+ 1188  kubectl get pod
+ 1189  kubectl -n openmp describe pod testing
+ 1190  kubectl -n openmp logs -p testing
+ 1191  kubectl run testing -n openmp
+ 1192  kubectl apply -f ~/test2.yaml
+ 1193  kubectl get pod
+ 1194  nano ~/test2.yaml
+ 1195  kubectl apply -f ~/test2.yaml
+ 1196  kubectl get pod
+ 1197  ./script.sh logs openmp openmp
+ 1198  kubectl get pod
+ 1199  nano ~/test2.yaml
+ 1200  kubectl apply -f ~/test2.yaml
+ 1201  kubectl get pod
+ 1202  kubectl reapply -f ~/test2.yaml
+ 1203  kubectl --help
+ 1204  kubectl apply -f ~/test2.yaml
+ 1205  kubectl get pod
+ 1206  nano ~/test.yaml
+ 1207  script
+ 1208  cd script/
+ 1209  nano script.sh 
+ 1210  emacs script.sh
+ 1211  ./script.sh help
+ 1212  git status
+ 1213  emacs script.sh
+ 1214   script.sh
+ 1215  emacs script.sh
+ 1216  nano script.sh
+ 1217  ./script.sh 
+ 1218  git status
+ 1219  nano script.sh
+ 1220  ./script.sh 
+ 1221  nano script.sh
+ 1222  ./script.sh 
+ 1223  nano script.sh
+ 1224  ./script.sh list
+ 1225  ./script logs openmp openmp
+ 1226  ./script.sh logs openmp openmp
+ 1227  ./script.sh help
+ 1228  ./script.sg run openmp openmp --command "echo "Hi""
+ 1229  ./script.sh run openmp openmp --command "echo "Hi""
+ 1230  ./script.sh run openmp openmp --command "echo 'Hi'"
+ 1231  kubectl get pods
+ 1232  kubectl get deploy openmp
+ 1233  kubectl get deployment openmp
+ 1234  kubectl get deployment 
+ 1235  kubectl get pods
+ 1236  nano script
+ 1237  nano script.s
+ 1238  nano script.sh
+ 1239  kubectl get deploy --show-labels
+ 1240  kubectl get pods --show-labels
+ 1241  ./script.sh --help
+ 1242  ./script.sh help
+ 1243  ./script.sh create openmp test2
+ 1244  kubectl show config
+ 1245  kubectl view config
+ 1246  kubectl config view
+ 1247  ls ~/.kube/config \
+ 1248  cd ..
+ 1249  ls
+ 1250  cd ckubed_sys/
+ 1251  ls 
+ 1252  cd ..
+ 1253  ls
+ 1254  cd ..
+ 1255  ls
+ 1256  cd ckubed-system/
+ 1257  ls
+ 1258  cd ..
+ 1259  ls
+ 1260  cd ckubed_sys/
+ 1261  ls
+ 1262  cd ..
+ 1263  ls
+ 1264  cd ckubed-system/
+ 1265  ls
+ 1266  cd ckubed_sys/
+ 1267  cd ..
+ 1268  ls
+ 1269  cd script/
+ 1270  ls
+ 1271  ./script
+ 1272  ./script.sh 
+ 1273  ./script.sh create openmp test2
+ 1274  ./script.sh help
+ 1275  ./script.sh listl
+ 1276  ./script.sh list
+ 1277  ./script.sh list test2
+ 1278  ./script.sh list openmp
+ 1279  kubectl get namespace
+ 1280  kubectl get pods -n test2
+ 1281  ./script.sh
+ 1282  ./script.sh help
+ 1283  ./script.sh create openmp test2 -t deployment
+ 1284  kubectl get pods -n test2
+ 1285  watch kubectl get pods -n test2 
+ 1286  kubectl describe pod test2-deployment-7fc9d99ffb-vd4x8
+ 1287  watch kubectl get pods -n test2 
+ 1288  kubectl describe pod test2-deployment-7fc9d99ffb-vd4x8 -n test2
+ 1289  watch kubectl describe pvc -n test2
+ 1290  ls
+ 1291  cd ..
+ 1292  ls
+ 1293  cd ckubed_sys/
+ 1294  ls
+ 1295  cd test2
+ 1296  ls
+ 1297  kubectl apply -f test2-pvc.yaml 
+ 1298  kubectl creat -f test2-pvc.yaml 
+ 1299  kubectl create -f test2-pvc.yaml 
+ 1300  kubectl get pvc
+ 1301  kubectl describe test2-pvc
+ 1302  kubectl describe pvc test2-pvc
+ 1303  history
+ 1304  ls
+ 1305  git clone https://github.com/HVKHCM/Ckubed.git
+ 1306  ls
+ 1307  history >>  history.txt
